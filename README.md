@@ -5,6 +5,11 @@
 - Mark To-dos as completed directly from your Freshdesk sidebar. 
 - To make things even smoother, to-dos are automatically closed when all to-dos created for the particular ticket gets completed.
 
+### Before you begin
+
+- Replace BASECAMP_3_CLIENT_ID in oauth_config.json file with your own Basecamp3 client ID.
+- Replace BASECAMP_3_CLIENT_SECRET in oauth_config.json file with your own Basecamp3 client secret.
+
 ### Project folder structure explained
 ```
 .
