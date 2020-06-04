@@ -6,7 +6,7 @@
 - To make things even smoother, to-dos are automatically closed when all to-dos created for the particular ticket gets completed.
 
 ### Project folder structure explained
-
+```
 .
 │   .report.json
 │   manifest.json
@@ -73,3 +73,5 @@
             onAppInstall.json
             onAppUninstall.json
             onExternalEvent.json
+            
+```
