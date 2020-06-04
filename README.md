@@ -10,61 +10,36 @@
 .
 │   .report.json
 │   manifest.json
-│   README.md
+│   README.md                               This File
 │
 ├───.fdk
 │       localstore
 │
 ├───app
-│   │   app.js
-│   │   template.html
+│   │   app.js                              Sidebar JS file
+│   │   template.html                       Sidebar template file
 │   │
 │   ├───modal
-│   │       addTodo.html
-│   │       addTodo.js
-│   │       viewTodos.html
-│   │       viewTodos.js
+│   │       addTodo.html                    Add Todo form modal template
+│   │       addTodo.js                      Add Todo form modal JS file
+│   │       viewTodos.html                  View Todos modal template
+│   │       viewTodos.js                    View Todos modal JS file
 │   │
 │   └───resources
 │       └───img
-│               basecamp-logo.svg
+│               basecamp-logo.svg           App icon/logo
 │
 ├───config
-│       iparams.json
-│       oauth_config.json
+│       iparams.json                        Installation parameters file
+│       oauth_config.json                   OAuth configuration file
 │
 ├───coverage
-│   │   base.css
-│   │   index.html
-│   │   prettify.css
-│   │   prettify.js
-│   │   sort-arrow-sprite.png
-│   │   sorter.js
-│   │
-│   ├───app
-│   │   │   app.js.html
-│   │   │   index.html
-│   │   │
-│   │   └───modal
-│   │           addTodo.js.html
-│   │           index.html
-│   │           modal.js.html
-│   │           viewTodos.js.html
-│   │
-│   ├───modal
-│   │       addTodo.js.html
-│   │       index.html
-│   │       viewTodos.js.html
-│   │
-│   └───server
-│           index.html
-│           server.js.html
 │
 ├───dist
 │       Basecamp3-Freshdesk-Integration.zip
 │
 └───server
-    │   server.js
+    │   server.js                           server event handling file
     │
     ├───lib
     │       handle-response.js
@@ -73,5 +48,5 @@
             onAppInstall.json
             onAppUninstall.json
             onExternalEvent.json
-            
+
 ```
