@@ -1,0 +1,23 @@
+{
+    "account_id": {
+        "display_name": "Basecamp Account Id : ",
+        "description": "Enter the Basecamp Account Id",
+        "type": "text",
+        "required": true,
+        "secure": false
+    },
+    "project_id": {
+        "display_name": "Basecamp Project Id : ",
+        "description": "Enter the Basecamp Project Id",
+        "type": "text",
+        "required": true,
+        "secure": false
+    },
+    "freshdesk_api_key": {
+        "display_name": "Freshdesk API key",
+        "description": "Enter the Freshdesk API key. It can be found in the profile settings.",
+        "type": "text",
+        "required": true,
+        "secure": true
+    }
+}

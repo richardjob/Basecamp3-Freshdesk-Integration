@@ -1,0 +1,7 @@
+{
+  "client_id": "<BASECAMP_3_CLIENT_ID>",
+  "client_secret": "<BASECAMP_3_CLIENT_SECRET>",
+  "authorize_url": "https://launchpad.37signals.com/authorization/new?type=web_server",
+  "token_url": "https://launchpad.37signals.com/authorization/token?type=web_server",
+  "token_type": "account"
+}

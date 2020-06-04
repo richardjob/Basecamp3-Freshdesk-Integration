@@ -1,0 +1,518 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <title>Code coverage report for modal\viewTodos.js</title>
+    <meta charset="utf-8" />
+    <link rel="stylesheet" href="../prettify.css" />
+    <link rel="stylesheet" href="../base.css" />
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <style type='text/css'>
+        .coverage-summary .sorter {
+            background-image: url(../sort-arrow-sprite.png);
+        }
+    </style>
+</head>
+<body>
+<div class='wrapper'>
+  <div class='pad1'>
+    <h1>
+      <a href="../index.html">all files</a> / <a href="index.html">modal/</a> viewTodos.js
+    </h1>
+    <div class='clearfix'>
+      <div class='fl pad1y space-right2'>
+        <span class="strong">24.44% </span>
+        <span class="quiet">Statements</span>
+        <span class='fraction'>11/45</span>
+      </div>
+      <div class='fl pad1y space-right2'>
+        <span class="strong">100% </span>
+        <span class="quiet">Branches</span>
+        <span class='fraction'>0/0</span>
+      </div>
+      <div class='fl pad1y space-right2'>
+        <span class="strong">24% </span>
+        <span class="quiet">Functions</span>
+        <span class='fraction'>6/25</span>
+      </div>
+      <div class='fl pad1y space-right2'>
+        <span class="strong">24.44% </span>
+        <span class="quiet">Lines</span>
+        <span class='fraction'>11/45</span>
+      </div>
+    </div>
+  </div>
+  <div class='status-line low'></div>
+<pre><table class="coverage">
+<tr><td class="line-count quiet">1
+2
+3
+4
+5
+6
+7
+8
+9
+10
+11
+12
+13
+14
+15
+16
+17
+18
+19
+20
+21
+22
+23
+24
+25
+26
+27
+28
+29
+30
+31
+32
+33
+34
+35
+36
+37
+38
+39
+40
+41
+42
+43
+44
+45
+46
+47
+48
+49
+50
+51
+52
+53
+54
+55
+56
+57
+58
+59
+60
+61
+62
+63
+64
+65
+66
+67
+68
+69
+70
+71
+72
+73
+74
+75
+76
+77
+78
+79
+80
+81
+82
+83
+84
+85
+86
+87
+88
+89
+90
+91
+92
+93
+94
+95
+96
+97
+98
+99
+100
+101
+102
+103
+104
+105
+106
+107
+108
+109
+110
+111
+112
+113
+114
+115
+116
+117
+118
+119
+120
+121
+122
+123
+124
+125
+126
+127
+128
+129
+130
+131
+132
+133
+134
+135
+136
+137
+138
+139
+140
+141
+142
+143
+144
+145
+146
+147
+148
+149
+150
+151
+152</td><td class="line-coverage quiet"><span class="cline-any cline-yes">1×</span>
+<span class="cline-any cline-yes">1×</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">1×</span>
+<span class="cline-any cline-yes">1×</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">1×</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">1×</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">1×</span>
+<span class="cline-any cline-yes">1×</span>
+<span class="cline-any cline-yes">1×</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">1×</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">1×</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span></td><td class="text"><pre class="prettyprint lang-js">$(document).ready(function () {
+  app
+    .initialized()
+    .then(function (_client) {
+      window.client = _client;
+      client.instance
+        .context()
+        .then(function (context) {
+          onModalLoad(context.data);
+        })
+        .catch(function (error) <span class="fstat-no" title="function not covered" >{</span>
+<span class="cstat-no" title="statement not covered" >          console.error("error", error);</span>
+        });
+    })
+    .catch(function (error) <span class="fstat-no" title="function not covered" >{</span>
+<span class="cstat-no" title="statement not covered" >      console.error("Error during initialization" + error);</span>
+    });
+});
+&nbsp;
+function onModalLoad(listId) {
+  renderTodos(listId);
+}
+&nbsp;
+function renderTodos(listId, projectID) {
+  $("#todos").hide();
+  $("#todo-details").show();
+  loadTodos(listId, function (todoDetails) <span class="fstat-no" title="function not covered" >{</span>
+    let html = <span class="cstat-no" title="statement not covered" >`</span>
+    &lt;div style="padding-bottom: 10px;"&gt;
+    &lt;h4&gt;"${todoDetails.length}" To-do Found&lt;/h4&gt; 
+    &lt;/div&gt;`;
+&nbsp;
+<span class="cstat-no" title="statement not covered" >    todoDetails.forEach((todo) =&gt; <span class="fstat-no" title="function not covered" >{</span></span>
+<span class="cstat-no" title="statement not covered" >      html =</span>
+        html +
+        `&lt;div style="margin-bottom: 3px; padding-top: 10px;"&gt;
+  
+          &lt;div style="margin-bottom: 6px;"&gt;
+          &lt;fw-checkbox class="check-box" class="check-box" value="${
+            todo.id
+          }, ${listId}"&gt;&lt;span&gt;${todo.content}&lt;/span&gt;
+        &lt;div style="margin-top: 8px"&gt;
+            &lt;fw-icon name="calendar-time" size="18" color="green"&gt;&lt;/fw-icon&gt; 
+            &lt;fw-label value="${todo.due_on}" color="yellow"&gt;&lt;/fw-label&gt;
+            &lt;fw-icon name="contact" size="18" color="green"&gt;&lt;/fw-icon&gt;
+            &lt;fw-label value="${getAssignees(
+              todo.assignees
+            )}" color="blue"&gt;&lt;/fw-label&gt;
+          &lt;/div&gt;&lt;/fw-checkbox&gt;
+          &lt;/div&gt;
+          
+        &lt;/div&gt;`;
+    });
+&nbsp;
+<span class="cstat-no" title="statement not covered" >    $("#to-dos").html(html);</span>
+<span class="cstat-no" title="statement not covered" >    $(".check-box").on("fwChange", (e) =&gt; <span class="fstat-no" title="function not covered" >{</span></span>
+      let todoId = <span class="cstat-no" title="statement not covered" >e.target.value.split(",")[0];</span>
+      let listId = <span class="cstat-no" title="statement not covered" >e.target.value.split(",")[1];</span>
+<span class="cstat-no" title="statement not covered" >      e.target.outerHTML = "";</span>
+<span class="cstat-no" title="statement not covered" >      markCompleted(todoId, listId);</span>
+    });
+  });
+}
+&nbsp;
+function loadTodos(listId, callback) {
+  var options = {
+    headers: {
+      Authorization: "Bearer &lt;%= access_token %&gt;",
+      "User-Agent": "Freshworks Integration (richardjob05@hmail.com)",
+    },
+    isOAuth: true,
+  };
+  client.request
+    .get(
+      `https://3.basecampapi.com/&lt;%= iparam.account_id %&gt;/buckets/&lt;%= iparam.project_id %&gt;/todolists/${listId}/todos.json`,
+      options
+    )
+    .then(function (data) <span class="fstat-no" title="function not covered" >{</span>
+<span class="cstat-no" title="statement not covered" >      callback(JSON.parse(data.response));</span>
+    })
+    .catch(function (error) <span class="fstat-no" title="function not covered" >{</span>
+<span class="cstat-no" title="statement not covered" >      console.error("error", error);</span>
+    });
+}
+&nbsp;
+function getAssignees(assignees) <span class="fstat-no" title="function not covered" >{</span>
+  let string = <span class="cstat-no" title="statement not covered" >"";</span>
+<span class="cstat-no" title="statement not covered" >  assignees.map((person) =&gt; <span class="fstat-no" title="function not covered" >{</span></span>
+<span class="cstat-no" title="statement not covered" >    string = string + person.name + " , ";</span>
+  });
+<span class="cstat-no" title="statement not covered" >  return string;</span>
+}
+&nbsp;
+function markCompleted(todoId, listId) <span class="fstat-no" title="function not covered" >{</span>
+  var options = <span class="cstat-no" title="statement not covered" >{</span>
+    headers: {
+      Authorization: "Bearer &lt;%= access_token %&gt;",
+      "User-Agent": "Freshworks Integration (richardjob05@gmail.com)",
+      "Content-Type": "application/json",
+    },
+    isOAuth: true,
+  };
+<span class="cstat-no" title="statement not covered" >  client.request</span>
+    .post(
+      `https://3.basecampapi.com/&lt;%= iparam.account_id %&gt;/buckets/&lt;%= iparam.project_id %&gt;/todos/${todoId}/completion.json`,
+      options
+    )
+    .then(function () <span class="fstat-no" title="function not covered" >{</span>
+<span class="cstat-no" title="statement not covered" >      viewTodos(listId);</span>
+<span class="cstat-no" title="statement not covered" >      lookupTicketId(todoId, listId);</span>
+    })
+    .catch(function (error) <span class="fstat-no" title="function not covered" >{</span>
+<span class="cstat-no" title="statement not covered" >      console.error("error", error);</span>
+    });
+}
+&nbsp;
+function lookupTicketId(todoId, listId) <span class="fstat-no" title="function not covered" >{</span>
+  var dbKey = <span class="cstat-no" title="statement not covered" >String(`basecampTodo:${todoId}`).substr(0, 30);</span>
+&nbsp;
+<span class="cstat-no" title="statement not covered" >  Promise.all([client.db.get(dbKey)])</span>
+    .then((data) =&gt; <span class="fstat-no" title="function not covered" >{</span>
+<span class="cstat-no" title="statement not covered" >      dbKey2 = String(`fdTicket:${data[0].ticketID}`).substr(0, 30);</span>
+<span class="cstat-no" title="statement not covered" >      Promise.all([client.db.get(dbKey2)])</span>
+        .then((value) =&gt; <span class="fstat-no" title="function not covered" >{</span>
+          let newData = <span class="cstat-no" title="statement not covered" >value[0];</span>
+<span class="cstat-no" title="statement not covered" >          newData.todoID.splice(value[0].todoID.indexOf(todoId), 1);</span>
+<span class="cstat-no" title="statement not covered" >          newData.todoList.splice(value[0].todoList.indexOf(listId), 1);</span>
+&nbsp;
+<span class="cstat-no" title="statement not covered" >          Promise.all([</span>
+            client.db.delete(dbKey2),
+            client.db.update(
+              String(`fdTicket:${data[0].ticketID}`).substr(0, 30),
+              "set",
+              newData
+            ),
+          ])
+            .then((result) =&gt; <span class="fstat-no" title="function not covered" >{</span>
+<span class="cstat-no" title="statement not covered" >              console.log(result);</span>
+            })
+            .catch(function (error) <span class="fstat-no" title="function not covered" >{</span>
+<span class="cstat-no" title="statement not covered" >              console.error("error", error);</span>
+            });
+        })
+        .catch((err) =&gt; <span class="fstat-no" title="function not covered" >{</span>
+<span class="cstat-no" title="statement not covered" >          console.log("err", err);</span>
+        });
+    })
+    .catch((err) =&gt; <span class="fstat-no" title="function not covered" >{</span>
+<span class="cstat-no" title="statement not covered" >      callback(err);</span>
+    });
+}
+&nbsp;</pre></td></tr>
+</table></pre>
+<div class='push'></div><!-- for sticky footer -->
+</div><!-- /wrapper -->
+<div class='footer quiet pad2 space-top1 center small'>
+  Code coverage
+  generated by <a href="http://istanbul-js.org/" target="_blank">istanbul</a> at Wed Jun 03 2020 17:40:13 GMT+0530 (India Standard Time)
+</div>
+</div>
+<script src="../prettify.js"></script>
+<script>
+window.onload = function () {
+        if (typeof prettyPrint === 'function') {
+            prettyPrint();
+        }
+};
+</script>
+<script src="../sorter.js"></script>
+</body>
+</html>
