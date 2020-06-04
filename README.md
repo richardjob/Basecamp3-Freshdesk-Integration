@@ -7,17 +7,69 @@
 
 ### Project folder structure explained
 
-    .
-    ├── README.md                  This file.
-    ├── config                     Installation parameter configs.
-    │   └── iparams.json           Installation parameter config in English language.
-    │   
-    └── manifest.json              Project manifest.
-    └── server                     Business logic for remote request and event handlers.
-        ├── lib
-        │   └── handle-response.js
-        ├── server.js
-        └── test_data
-            ├── onAppInstall.json
-            ├── onAppUninstall.json
-            └── onExternalEvent.json
+.
+│   .report.json
+│   manifest.json
+│   README.md
+│
+├───.fdk
+│       localstore
+│
+├───app
+│   │   app.js
+│   │   template.html
+│   │
+│   ├───modal
+│   │       addTodo.html
+│   │       addTodo.js
+│   │       viewTodos.html
+│   │       viewTodos.js
+│   │
+│   └───resources
+│       └───img
+│               basecamp-logo.svg
+│
+├───config
+│       iparams.json
+│       oauth_config.json
+│
+├───coverage
+│   │   base.css
+│   │   index.html
+│   │   prettify.css
+│   │   prettify.js
+│   │   sort-arrow-sprite.png
+│   │   sorter.js
+│   │
+│   ├───app
+│   │   │   app.js.html
+│   │   │   index.html
+│   │   │
+│   │   └───modal
+│   │           addTodo.js.html
+│   │           index.html
+│   │           modal.js.html
+│   │           viewTodos.js.html
+│   │
+│   ├───modal
+│   │       addTodo.js.html
+│   │       index.html
+│   │       viewTodos.js.html
+│   │
+│   └───server
+│           index.html
+│           server.js.html
+│
+├───dist
+│       Basecamp3-Freshdesk-Integration.zip
+│
+└───server
+    │   server.js
+    │
+    ├───lib
+    │       handle-response.js
+    │
+    └───test_data
+            onAppInstall.json
+            onAppUninstall.json
+            onExternalEvent.json
