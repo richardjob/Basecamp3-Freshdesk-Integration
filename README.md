@@ -1,6 +1,9 @@
-## Freshdesk App Project
+## Basecamp3-Freshdesk-Integration
 
-Congratulations on creating your App Project! Feel free to replace this text with your project description.
+- Add multiple to-dos to your Basecamp 3 project for a particular Freshdesk ticket.
+- View To-dos , due date, and assignees. 
+- Mark To-dos as completed directly from your Freshdesk sidebar. 
+- To make things even smoother, to-dos are automatically closed when all to-dos created for the particular ticket gets completed.
 
 ### Project folder structure explained
 
